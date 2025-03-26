@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     
     if (!url) {
       console.error('未提供视频URL');
-      return NextResponse.json(
+      return Response.json(
         { success: false, message: '未提供视频URL' },
         { status: 400 }
       );
@@ -129,7 +129,7 @@ export async function GET(request: Request) {
       errorMessage = error.message || '下载过程中发生未知错误';
     }
     
-    return NextResponse.json(
+    return Response.json(
       { success: false, message: errorMessage },
       { status: statusCode }
     );

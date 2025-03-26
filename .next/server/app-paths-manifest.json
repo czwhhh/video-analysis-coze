@@ -1,6 +1,6 @@
 {
-  "/page": "app/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/video/download/route": "app/api/video/download/route.js",
-  "/api/video/analyze/route": "app/api/video/analyze/route.js"
+  "/api/video/analyze/route": "app/api/video/analyze/route.js",
+  "/page": "app/page.js",
+  "/api/video/download/route": "app/api/video/download/route.js"
 }
