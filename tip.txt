@@ -1,0 +1,39 @@
+帮我实现一个视频解析网站，功能如下：
+1、登录功能：
+自定义登录模板
+登录成功后跳转到首页
+2、注册功能：
+注册成功后自动登录并i跳转到首页
+创建用户资料并设置初始积分
+3、退出功能：
+在模板中使用表单提交而不是链接
+退出后跳转到首页
+4、积分系统：
+注册赠送100积分
+每日首次登录奖励10积分
+每次解析扣除1积分
+积分不足时无法解析
+5、访问控制：
+首页允许游客访问
+解析功能需要登录
+游客点击解析时自动跳转到登录页
+6、用户界面：
+导航栏显示登录/注册/退出按钮
+登录后显示用户积分
+视频解析使用Coze API
+请求格式：
+curl -X POST 'https://api.coze.cn/v1/workflow/run' \
+-H "Authorization: Bearer pat_ur38mP94BhFewhCa6gVMa3fOfacxnuQLPxdTQ3O4zDN9XK5v3pLyBbJur4O0hcPH" \
+-H "Content-Type: application/json" \
+-d '{
+  "parameters": {
+    "input": ""
+  },
+  "workflow_id": "7485642000294756378"
+}'
+相应格式：
+{"code":0,"cost":"0","data":"{\"output\":[{\"extension\":\"mp4\",\"quality\":\"hd_no_watermark\",\"type\":\"video\",\"url\":\"https://v3-dy.ixigua.com/f9d521a49517a5fe199de929bc93c943/67e383cc/video/tos/cn/tos-cn-ve-15/oYX6DFBAEEWIgOgDFAfvFGKA9se8nDDJAQbMBW/?a=2011&ch=0&cr=0&dr=0&net=5&cd=0%7C0%7C0%7C0&cv=1&br=419&bt=419&cs=0&ds=3&ft=k7Fz7VVywIiRZm8Zmo~pK7pswAp0OBWZvrKtqj02do0g3cI&mime_type=video_mp4&qs=0&rc=ZWU6ZWRkZTNlaWg6Zzk3OkBpajY3aXc5cmw4eDMzNGkzM0AyMDEtLmM2XmExLjEuNDE0YSMvM2UtMmRray1gLS1kLTBzcw%3D%3D&btag=80000e00028000&dy_q=1742959930&feature_id=aa7df520beeae8e397df15f38df0454c&l=2025032611321042613243473C45037510\"}]}","debug_url":"https://www.coze.cn/work_flow?execute_id=7485955873480032308&space_id=7353159690370514984&workflow_id=7485642000294756378&execute_mode=2","msg":"Success","token":0}
+
+
+
+8.23 03/01 OkP:/ r@r.Rx s37西施出装铭文 快跟离月老师一起成为高手西施吧# 西施 # 出装铭文 # 教学  https://v.douyin.com/Vzw5js8LX2Y/ 复制此链接，打开Dou音搜索，直接观看视频！
