@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_DISABLE_DB": "true",
+    "COZE_API_KEY": "pat_ur38mP94BhFewhCa6gVMa3fOfacxnuQLPxdTQ3O4zDN9XK5v3pLyBbJur4O0hcPH",
+    "COZE_WORKFLOW_ID": "7485642000294756378"
+  }
+} 

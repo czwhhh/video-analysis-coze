@@ -30,18 +30,22 @@ export async function analyzeVideo(url: string): Promise<AnalysisResult> {
       };
     }
     
-    // 使用指定的Coze API格式发送请求
+    // 使用环境变量中的API密钥，如果不存在则使用默认值
+    const apiKey = process.env.COZE_API_KEY || 'pat_ur38mP94BhFewhCa6gVMa3fOfacxnuQLPxdTQ3O4zDN9XK5v3pLyBbJur4O0hcPH';
+    const workflowId = process.env.COZE_WORKFLOW_ID || '7485642000294756378';
+    
+    // 使用Coze API发送请求
     const response = await axios.post(
       'https://api.coze.cn/v1/workflow/run',
       {
         parameters: {
           input: cleanUrl
         },
-        workflow_id: "7485642000294756378"
+        workflow_id: workflowId
       },
       {
         headers: {
-          'Authorization': 'Bearer pat_ur38mP94BhFewhCa6gVMa3fOfacxnuQLPxdTQ3O4zDN9XK5v3pLyBbJur4O0hcPH',
+          'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json'
         }
       }
